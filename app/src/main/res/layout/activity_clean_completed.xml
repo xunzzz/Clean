@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_light"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/clean_already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="清理完成"
+        android:textColor="@color/color_black"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="164dp"
+            android:layout_height="164dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/clean_already_circle" />
+
+        <ImageView
+            android:layout_width="104dp"
+            android:layout_height="104dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_verified_user_24dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/clean_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="共清理573M垃圾"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/clean_size"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="72dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/deadline_color" />
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_below="@+id/line">
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="96dp"
+                android:background="@drawable/circle"
+                android:padding="1dp"
+                android:src="@drawable/ic_check_24dp" />
+
+            <TextView
+                android:id="@+id/clean_app_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/iv1"
+                android:text="共清理106款应用垃圾"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_below="@+id/rl1">
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="96dp"
+                android:background="@drawable/circle"
+                android:padding="1dp"
+                android:src="@drawable/ic_check_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/iv2"
+                android:text="共清理106应用垃圾"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl3"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_below="@+id/rl2">
+
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="96dp"
+                android:background="@drawable/circle"
+                android:padding="1dp"
+                android:src="@drawable/ic_check_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/iv3"
+                android:text="共清理106应用垃圾"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48.5dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white_light">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/deadline_color" />
+
+        <Button
+            android:id="@+id/consume"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/selector_text_ripple"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/color_black"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</LinearLayout>

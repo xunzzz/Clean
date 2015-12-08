@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zx.clean.activity.ChangThemeActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        style="@style/ClubToolbar"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                android:src="@drawable/ic_arrow_back_24dp"
+                android:background="@drawable/selector_toolbar_right_corner_ripple"
+                />
+
+            <TextView
+                android:id="@+id/consume"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:text="确定"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="@drawable/selector_toolbar_right_corner_ripple"
+                />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:id="@+id/content_Rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <include layout="@layout/content_main_mini" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:gravity="center" />
+</LinearLayout>

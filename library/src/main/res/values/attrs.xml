@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularViewPager">
+        <attr name="arc_progress" format="integer"/>
+        <attr name="progress_arc_max" format="integer"/>
+
+        <attr name="progress_arc_clockwise_outline_color" format="color"/>
+        <attr name="progress_arc_counter_clockwise_outline_color" format="color"/>
+        <attr name="progress_arc_clockwise_color" format="color"/>
+        <attr name="progress_arc_counter_clockwise_color" format="color"/>
+
+        <attr name="progress_arc_clockwise_outline_width" format="dimension"/>
+        <attr name="progress_arc_counter_clockwise_outline_width" format="dimension"/>
+        <attr name="progress_arc_clockwise_width" format="dimension"/>
+        <attr name="progress_arc_counter_clockwise_width" format="dimension"/>
+
+        <attr name="progress_start_line_enabled" format="boolean"/>
+        <attr name="progress_pager_on_click_enabled" format="boolean"/>
+
+        <attr name="progress_pager_fill_circle_color" format="color"/>
+        <attr name="progress_pager_fill_mode" format="enum">
+            <enum name="default_mode" value="0"/>
+            <enum name="pie_mode" value="1"/>
+        </attr>
+
+    </declare-styleable>
+
+</resources>

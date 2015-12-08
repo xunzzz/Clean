@@ -1,0 +1,77 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">?attr/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="AppTheme.TransparentActivity" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppTheme.TransparentActivity.FullScreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <!--toolbar去除左边空白的自定义style-->
+    <style name="ClubToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <!-- 设置该属性解决空白部分-->
+    </style>
+
+    <style name="IndigoTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="IndigoTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--设置tablayout的样式-->
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <!--<item name="tabMaxWidth">@dimen/tab_max_width</item>&lt;!&ndash;&ndash;&gt;-->
+        <item name="tabIndicatorColor">@color/white</item><!--tablayout光标的颜色-->
+        <item name="tabIndicatorHeight">2dp</item><!--tablayout光标的高度-->
+        <item name="tabPaddingStart">12dp</item><!--tablayout标题左侧的距离-->
+        <item name="tabPaddingEnd">12dp</item><!--tablayout标题右侧的距离-->
+        <item name="tabBackground">?attr/selectableItemBackground</item><!--tablayout背景色-->
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item><!---->
+        <item name="tabSelectedTextColor">@color/white</item><!--tablayout被选中时的标题文字的颜色-->
+    </style>
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16dp</item><!--tablayout标题文字的大小-->
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item><!--tablayout默认标题文字的颜色-->
+        <item name="textAllCaps">true</item><!--tablayout标题文字是否限制大小写，如果为true代表文字大写-->
+    </style>
+
+    <style name="CircularBar_style">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_arc_max">100</item>
+        <item name="arc_progress">10</item>
+
+        <item name="progress_arc_clockwise_outline_color">@color/white</item>
+        <item name="progress_arc_clockwise_color">@color/white</item>
+        <!--<item name="progress_arc_counter_clockwise_outline_color">@color/colorPrimary</item>
+        <item name="progress_arc_counter_clockwise_color">@color/colorPrimary</item>-->
+
+        <item name="progress_arc_clockwise_outline_width">0.75dp</item>
+        <item name="progress_arc_counter_clockwise_outline_width">0dp</item>
+        <item name="progress_arc_clockwise_width">6dp</item>
+        <item name="progress_arc_counter_clockwise_width">6dp</item>
+
+        <item name="progress_pager_on_click_enabled">true</item>
+    </style>
+</resources>

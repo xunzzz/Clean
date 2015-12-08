@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_dark"
+    android:paddingBottom="24dp"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:background="?attr/colorPrimary">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/ic_signal_wifi_3_bar_24dp" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/battery"
+            android:src="@drawable/ic_signal_cellular_1_bar_24dp" />
+
+        <ImageView
+            android:id="@+id/battery"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/time"
+            android:src="@drawable/ic_battery_60_24dp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="6dp"
+            android:text="12:30"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/toolbar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/top_rl"
+        android:background="?attr/colorPrimary">
+
+        <ImageView
+            android:id="@+id/toolbar_menu"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/ic_menu_24dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/toolbar_menu"
+            android:layout_marginLeft="8dp"
+            android:text="Clean"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_rl"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/circle_rl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="?attr/colorPrimary"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/arc_left"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_centerVertical="true">
+
+                <com.zx.clean.views.ArcProgress
+                    android:id="@+id/arc_store"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    custom:arc_bottom_text="存储空间"
+                    custom:arc_bottom_text_size="12sp"
+                    custom:arc_progress1="80"
+                    custom:arc_stroke_width="5dp"
+                    custom:arc_text_color="@color/white"
+                    custom:arc_unfinished_color="?attr/colorAccent"
+                    custom:arc_text_size="21sp" />
+
+                <TextView
+                    android:id="@+id/arc_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="42dp"
+                    android:text="20/30"
+                    android:textColor="@color/white"
+                    android:textSize="8dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/arc_left">
+
+                <com.zx.clean.views.ArcProgress
+                    android:id="@+id/arc_process"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginLeft="10dp"
+                    custom:arc_unfinished_color="?attr/colorAccent"
+                    custom:arc_bottom_text="内存"
+                    custom:arc_bottom_text_size="9sp"
+                    custom:arc_progress1="76"
+                    custom:arc_stroke_width="4dp"
+                    custom:arc_text_color="@color/white"
+                    custom:arc_text_size="20sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.zx.clean.views.ItemCardViewMini
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    card:card_image="@drawable/card_icon_speedup"
+                    card:card_name="内存加速" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.zx.clean.views.ItemCardViewMini
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    card:card_image="@drawable/card_icon_trash"
+                    card:card_name="垃圾清理" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.zx.clean.views.ItemCardViewMini
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    card:card_image="@drawable/card_icon_media"
+                    card:card_name="应用管理" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.zx.clean.views.ItemCardViewMini
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    card:card_image="@drawable/card_icon_autorun"
+                    card:card_name="权限管理" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.zx.clean.views.ItemCardViewMini
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    card:card_image="@drawable/bdcx"
+                    card:card_name="病毒查杀" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
