@@ -24,7 +24,6 @@ public class AboutActivity extends AppCompatActivity {
         initView2();
 
 
-        findViewById(R.id.nav_manage);
     }
 
 

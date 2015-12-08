@@ -225,19 +225,20 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.nav_camara) {
-            selectedItemId = R.id.nav_camara;
-        } else if (id == R.id.nav_gallery) {
-            selectedItemId = R.id.nav_gallery;
-        } else if (id == R.id.nav_slideshow) {
-            selectedItemId = R.id.nav_slideshow;
-        } else if (id == R.id.nav_manage) {
-            selectedItemId = R.id.nav_manage;
-        } else if (id == R.id.nav_share) {
+        if (id == R.id.nav_home) {
+            selectedItemId = R.id.nav_home;
+        } else if (id == R.id.nav_settings) {
+            selectedItemId = R.id.nav_settings;
+        } else if (id == R.id.nav_change_theme) {
+            selectedItemId = R.id.nav_change_theme;
+        } else if (id == R.id.nav_tools) {
+            selectedItemId = R.id.nav_tools;
+        }
+        /*else if (id == R.id.nav_share) {
             selectedItemId = R.id.nav_share;
         } else if (id == R.id.nav_send) {
             selectedItemId = R.id.nav_send;
-        }
+        }*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -248,7 +249,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     @Override
     public void drawerColse(int id) {
         switch (id){
-            case R.id.nav_manage :
+            case R.id.nav_change_theme :
                 startActivity(new Intent(MainActivity.this, ChangThemeActivity.class));
                 break;
         }
