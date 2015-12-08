@@ -23,13 +23,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:src="@drawable/small_icon" />
+            android:src="@drawable/ic_security_24dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="一键清理 干干净净"
+            android:text="手机安全中心"
             android:textColor="@color/white"
             android:textSize="20sp" />
     </LinearLayout>
@@ -41,7 +41,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="16dp"
         android:gravity="center"
-        android:text="啦啦啦啦啦"
+        android:text="值得信赖！！！"
         android:textColor="@color/white"
         android:textSize="9sp" />
 </RelativeLayout>
