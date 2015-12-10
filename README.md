@@ -5,12 +5,12 @@
     
     
     
-![image](https://github.com/xunzzz/Clean/blob/master/app/src/main/res/drawable-xxhdpi/S51208-114446.jpg) 
-![image](https://github.com/xunzzz/Clean/blob/master/app/src/main/res/drawable-xxhdpi/S51208-114510.jpg)
+![image](https://github.com/xunzzz/Clean/blob/master/app/src/main/res/drawable-xxhdpi/s51208114446.jpg) 
+![image](https://github.com/xunzzz/Clean/blob/master/app/src/main/res/drawable-xxhdpi/s51208114510.jpg)
 
 
 
-![image](https://github.com/xunzzz/Clean/blob/master/app/src/main/res/drawable-xxhdpi/S51208-114521.jpg)
-![image](https://github.com/xunzzz/Clean/blob/master/app/src/main/res/drawable-xxhdpi/S51208-114535.jpg)
+![image](https://github.com/xunzzz/Clean/blob/master/app/src/main/res/drawable-xxhdpi/s51208114521.jpg)
+![image](https://github.com/xunzzz/Clean/blob/master/app/src/main/res/drawable-xxhdpi/s51208114535.jpg)
 
 
